@@ -6,5 +6,8 @@ If anyone has any issues or suggested improvements (like additional game install
 
 # Installation
 
-To use, download and run `install.sh` on your Deck (or run `bash <(curl -s https://raw.githubusercontent.com/bsutherland333/steam_deck_sleep_updates/refs/heads/main/install.sh)`) and then go to Steam download settings and set updates to be scheduled for 3am to 4am. Note that major SteamOS updates will delete both `.service` files and you will occasionally need to re-run the install script, similar to how Decky Loader needs occasional re-installation.
+To use, download and run `install.sh` on your Deck or run `bash <(curl -s https://raw.githubusercontent.com/bsutherland333/steam_deck_sleep_updates/refs/heads/main/install.sh)`. Once that is done, go to Steam download settings and set updates to be scheduled for 3am to 4am. Note that major SteamOS updates will delete both `.service` files and you will occasionally need to re-run the install script, similar to how Decky Loader needs occasional re-installation.
 
+# Uninstallation
+
+To remove these files, run `uninstall.sh` or `bash <(curl -s https://raw.githubusercontent.com/bsutherland333/steam_deck_sleep_updates/refs/heads/main/uninstall.sh)`.
