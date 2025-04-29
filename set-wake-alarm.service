@@ -1,0 +1,11 @@
+[Unit]
+Description=Set RTC wake alarm
+Before=sleep.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/root-scripts/set-wake-alarm.sh
+
+[Install]
+WantedBy=sleep.target
+

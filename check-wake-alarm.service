@@ -1,0 +1,11 @@
+[Unit]
+Description=Check power state after RTC wake alarm
+After=suspend.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/root-scripts/check-wake-alarm.sh
+
+[Install]
+WantedBy=suspend.target
+
