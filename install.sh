@@ -8,9 +8,11 @@ sudo mkdir -p /home/root-scripts
 # Download the scripts and services, if they don't exist
 if [ ! -f /home/root-scripts/set-wake-alarm.sh ]; then
   sudo curl -L -o /home/root-scripts/set-wake-alarm.sh https://raw.githubusercontent.com/bsutherland333/steam_deck_sleep_updates/refs/heads/main/set-wake-alarm.sh
+  sudo chmod 744 /home/root-scripts/set-wake-alarm.sh
 fi
 if [ ! -f /home/root-scripts/check-wake-alarm.sh ]; then
   sudo curl -L -o /home/root-scripts/check-wake-alarm.sh https://raw.githubusercontent.com/bsutherland333/steam_deck_sleep_updates/refs/heads/main/check-wake-alarm.sh
+  sudo chmod 744 /home/root-scripts/check-wake-alarm.sh
 fi
 if [ ! -f /etc/systemd/system/set-wake-alarm.service ]; then
     sudo curl -L -o /etc/systemd/system/set-wake-alarm.service https://raw.githubusercontent.com/bsutherland333/steam_deck_sleep_updates/refs/heads/main/set-wake-alarm.service
